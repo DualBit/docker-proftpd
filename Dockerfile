@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update -y
-RUN apt-get install -y proftpd
+RUN apt-get install -y proftpd sudo
 
 ADD launch /launch
 ADD proftpd.conf /etc/proftpd/proftpd.conf
